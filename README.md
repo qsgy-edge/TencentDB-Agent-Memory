@@ -139,6 +139,11 @@ openclaw plugins install @tencentdb-agent-memory/memory-tencentdb
 openclaw gateway restart
 ```
 
+> Please use the native OpenClaw command to upgrade the plugin. This approach prevents the plugin from being disabled caused by semantic version ranges.
+> ```bash
+> openclaw plugins update @tencentdb-agent-memory/memory-tencentdb
+> ```
+
 ### 1.2 Zero-config to enable
 
 Defaults to a local `SQLite + sqlite-vec` backend.
